@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
       submitBtn.disabled = true;
       
       try {
-        const response = await fetch("https://betsamukuba-20vs.onrender.com", {
+        const response = await fetch("https://portfolio-backend-20vs.onrender.com/contact", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
