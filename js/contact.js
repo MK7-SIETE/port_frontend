@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }),
         });
 
-        const data = await response.json();
+       
 
         if (response.ok) {
           submitBtn.textContent = 'Message Sent! ✓';
