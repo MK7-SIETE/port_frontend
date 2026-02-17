@@ -1,0 +1,357 @@
+/**
+ * RESPONSIVE.CSS - Common responsive styles for all pages
+ * Contains: Navigation, footer, and general layout breakpoints for all iPhone models
+ */
+
+/* ===== DESKTOP TO TABLET TRANSITION (1200px) ===== */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  
+  #hamburger-nav {
+    display: flex;
+  }
+  
+  section {
+    margin: 0 5rem;
+  }
+}
+
+/* ===== TABLET BREAKPOINT (1024px) ===== */
+@media screen and (max-width: 1024px) {
+  section {
+    margin: 0 4rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .section__text__p1 {
+    font-size: 1.1rem;
+  }
+  
+  nav {
+    height: 15vh;
+    padding: 0 2rem;
+  }
+  
+  .arrow {
+    right: -3rem;
+  }
+}
+
+/* ===== LARGE PHONE / SMALL TABLET (768px) ===== */
+@media screen and (max-width: 768px) {
+  section {
+    margin: 0 2rem;
+    padding-top: 3vh;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+  
+  nav {
+    height: 13vh;
+    padding: 0 1.5rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .arrow {
+    display: none;
+  }
+  
+  footer {
+    padding: 2rem 1.5rem 2rem;
+    margin-top: 3rem;
+  }
+  
+  footer .nav-links {
+    font-size: 0.9rem;
+    gap: 0.8rem;
+  }
+  
+  footer .nav-links a {
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .social-links {
+    gap: 1.5rem;
+  }
+  
+  .social-links a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.8rem;
+  }
+}
+
+/* ===== iPHONE 14 PRO MAX, 14 PLUS (430px) ===== */
+@media screen and (max-width: 430px) {
+  section {
+    margin: 0 1.5rem;
+    padding-top: 2vh;
+    min-height: 70vh;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .section__text__p1 {
+    font-size: 0.95rem;
+  }
+  
+  nav {
+    height: 12vh;
+    padding: 0 1.2rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .hamburger-icon {
+    height: 20px;
+    width: 26px;
+  }
+  
+  .menu-links a {
+    font-size: 1.1rem;
+    padding: 0.9rem 1.8rem;
+  }
+  
+  footer {
+    padding: 1.8rem 1.2rem 1.8rem;
+  }
+  
+  footer .nav-links-container {
+    margin-bottom: 1.2rem;
+  }
+  
+  footer .nav-links {
+    font-size: 0.85rem;
+    gap: 0.6rem;
+  }
+  
+  footer .nav-links a {
+    padding: 0.4rem 0.7rem;
+  }
+  
+  .social-links {
+    gap: 1.2rem;
+    margin: 1.2rem 0;
+  }
+  
+  .social-links a {
+    width: 42px;
+    height: 42px;
+    font-size: 1.6rem;
+  }
+  
+  footer p {
+    font-size: 0.85rem;
+    margin-top: 1.2rem;
+  }
+}
+
+/* ===== iPHONE 14 PRO, 13 PRO, 12 PRO (393px) ===== */
+@media screen and (max-width: 393px) {
+  .title {
+    font-size: 1.7rem;
+  }
+  
+  nav {
+    padding: 0 1.1rem;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+  }
+}
+
+/* ===== iPHONE 14, 13, 12 (390px) ===== */
+@media screen and (max-width: 390px) {
+  section {
+    margin: 0 1.3rem;
+  }
+}
+
+/* ===== iPHONE 13 MINI, 12 MINI (375px) ===== */
+@media screen and (max-width: 375px) {
+  section {
+    margin: 0 1rem;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+  }
+  
+  .section__text__p1 {
+    font-size: 0.9rem;
+  }
+  
+  nav {
+    height: 11vh;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  .hamburger-icon {
+    height: 18px;
+    width: 24px;
+  }
+  
+  .menu-links a {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .theme-toggle-mobile {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  footer {
+    padding: 1.5rem 1rem 1.5rem;
+  }
+  
+  footer .nav-links {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+  
+  footer .nav-links a {
+    padding: 0.35rem 0.6rem;
+  }
+  
+  .social-links {
+    gap: 1rem;
+  }
+  
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+}
+
+/* ===== iPHONE SE (3rd/2nd gen), 8, 7, 6s (375px) ===== */
+/* Same as above 375px breakpoint */
+
+/* ===== iPHONE SE (1st gen) (320px) ===== */
+@media screen and (max-width: 320px) {
+  section {
+    margin: 0 0.8rem;
+    min-height: 65vh;
+  }
+  
+  .title {
+    font-size: 1.4rem;
+  }
+  
+  .section__text__p1 {
+    font-size: 0.85rem;
+  }
+  
+  nav {
+    height: 10vh;
+    padding: 0 0.8rem;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .hamburger-icon {
+    height: 16px;
+    width: 22px;
+  }
+  
+  .menu-links {
+    border-radius: 0.8rem;
+  }
+  
+  .menu-links a {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+  }
+  
+  .theme-toggle-mobile {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  footer {
+    padding: 1.2rem 0.8rem 1.2rem;
+  }
+  
+  footer .nav-links-container {
+    margin-bottom: 1rem;
+  }
+  
+  footer .nav-links {
+    font-size: 0.75rem;
+    gap: 0.4rem;
+  }
+  
+  footer .nav-links a {
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .social-links {
+    gap: 0.8rem;
+    margin: 1rem 0;
+  }
+  
+  .social-links a {
+    width: 38px;
+    height: 38px;
+    font-size: 1.4rem;
+  }
+  
+  footer p {
+    font-size: 0.75rem;
+    margin-top: 0.8rem;
+  }
+}
+
+/* ===== VERY SMALL SCREENS (280px and below) ===== */
+@media screen and (max-width: 280px) {
+  section {
+    margin: 0 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .section__text__p1 {
+    font-size: 0.8rem;
+  }
+  
+  nav {
+    padding: 0 0.6rem;
+  }
+  
+  .logo {
+    font-size: 1rem;
+  }
+}
